@@ -5,7 +5,7 @@ to a value entered by user by using return by reference.*/
 
 #include<iostream>
 
-float& setLargerTemperature(float& temp1, float& temp2);
+float& returnLargerTemperature(float& temp1, float& temp2);
 
 int main()
 {
@@ -17,12 +17,12 @@ int main()
     std::cout<<"Enter the temperature you want to set the larger one to: ";
     std::cin>>setToThisTemp;
     std::cout<<"Before calling the function the tempeartures are "<<temperature1<<" and "<<temperature2<<"."<<std::endl;
-    setLargerTemperature(temperature1, temperature2) = setToThisTemp;
+    returnLargerTemperature(temperature1, temperature2) = setToThisTemp;
     std::cout<<"After calling the function the tempeartures are "<<temperature1<<" and "<<temperature2<<"."<<std::endl;
     return 0;
 }
 
-float& setLargerTemperature(float& temp1, float& temp2)
+float& returnLargerTemperature(float& temp1, float& temp2)
 {
     if(temp1>temp2)
         return temp1;

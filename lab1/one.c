@@ -12,7 +12,7 @@ int main()
 {
     char headings[][8] = {"Years", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec", "Sum", "Average"};
     float **expenditure;
-    float *sum, *average;
+    float *sum, *average, sumOverAllYears=0, averageOverAllYears;
     int startYear, numberOfYears;
 
     printf("Enter the start year(eg: 2012): ");
@@ -31,19 +31,20 @@ int main()
     // taking data from the user
     for (int i = 0; i < numberOfYears; i++)
     {
-        printf("Enter the data for the year %d\n", startYear + i);
+        printf("\nEnter the data for the year %d\n", startYear + i);
         sum[i] = 0;
         for (int j = 0; j < 12; j++)
         {
-            printf("Expenditure for the month %s:", headings[j + 1]);
+            printf("%s:", headings[j + 1]);
             scanf("%f", &expenditure[i][j]);
             sum[i] += expenditure[i][j];
         }
         average[i] = sum[i] / 12;
+        sumOverAllYears += sum[i];
     }
 
     // displaying data
-    printf("Expenditure table\n");
+    printf("\nExpenditure table\n");
     for (int i = 0; i < 15; i++)
     {
         printf("%-10s", headings[i]);
@@ -57,6 +58,8 @@ int main()
         }
         printf("%-10.2f%-10.2f", sum[i], average[i]);
     }
+    printf("\n\nThe sum of expenditure over the range of years: %f", sumOverAllYears);
+    printf("\nThe average of expenditures over the range of years: %f", sumOverAllYears/numberOfYears);
 
     free(expenditure);
     free(sum);

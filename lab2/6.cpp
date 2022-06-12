@@ -11,7 +11,7 @@ Make a function that takes two arguments; one salary and the other increment. Us
 
 #include<iostream>
 
-float newSalary(float oldSalary, int increment = 12)
+float newSalary(float oldSalary, int increment = 0)
 {
     return (oldSalary + (static_cast<float>(increment) / 100) * oldSalary);
 }
@@ -32,7 +32,7 @@ int main()
     std::cout<<"NEW SALARIES i.e. 2010"<<std::endl;
     std::cout<<"Chief Executive Officer : Rs. "<<newSalary(oldSalCEO, 9)<<std::endl
              <<"Information Officer : Rs.  "<<newSalary(oldSalIO, 10)<<std::endl
-             <<"System Analyst : Rs. "<<newSalary(oldSalSA)<<std::endl
-             <<"Programmer : Rs. "<<newSalary(oldSalP)<<std::endl;
+             <<"System Analyst : Rs. "<<newSalary(oldSalSA, 12)<<std::endl
+             <<"Programmer : Rs. "<<newSalary(oldSalP, 12)<<std::endl;
     return 0;
 }

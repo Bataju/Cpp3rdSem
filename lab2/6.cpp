@@ -11,28 +11,20 @@ Make a function that takes two arguments; one salary and the other increment. Us
 
 #include<iostream>
 
-float newSalary(float oldSalary, int increment = 0)
+using namespace std;
+
+float displayCurrentSalary(float sal, int increment=12)
 {
-    return (oldSalary + (static_cast<float>(increment) / 100) * oldSalary);
+    return (sal+((float)increment/100) * sal);
 }
-//(oldSalary + ((increment / 100) * oldSalary))
+
 int main()
 {
-    float oldSalCEO, oldSalIO, oldSalSA, oldSalP;
-    oldSalCEO = 35000;
-    oldSalIO = 25000;
-    oldSalSA = 24000;
-    oldSalP = 18000;
-    std::cout<<"OLD SALARIES i.e. 2009"<<std::endl;
-    std::cout<<"Chief Executive Officer : Rs. "<<oldSalCEO<<std::endl
-             <<"Information Officer : Rs.  "<<oldSalIO<<std::endl
-             <<"System Analyst : Rs. "<<oldSalSA<<std::endl
-             <<"Programmer : Rs. "<<oldSalP<<std::endl<<std::endl;
-             
-    std::cout<<"NEW SALARIES i.e. 2010"<<std::endl;
-    std::cout<<"Chief Executive Officer : Rs. "<<newSalary(oldSalCEO, 9)<<std::endl
-             <<"Information Officer : Rs.  "<<newSalary(oldSalIO, 10)<<std::endl
-             <<"System Analyst : Rs. "<<newSalary(oldSalSA, 12)<<std::endl
-             <<"Programmer : Rs. "<<newSalary(oldSalP, 12)<<std::endl;
+    float salCEO=35000, salIO=25000, salSA=24000, salPro=18000;
+    cout<<"The increased salaries: "<<endl;
+    cout<<"Chief executive officer Rs. "<<displayCurrentSalary(salCEO, 9)<<endl;
+    cout<<"Information Officer Rs. "<<displayCurrentSalary(salIO, 10)<<endl;
+    cout<<"System Analyst Rs. "<<displayCurrentSalary(salSA)<<endl;
+    cout<<"Progarmmer Rs. "<<displayCurrentSalary(salPro)<<endl;
     return 0;
 }

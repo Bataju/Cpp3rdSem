@@ -14,18 +14,18 @@ using the "fun" function of the "Square" namespace.*/
 namespace Square
 {
     int num;
-    int fun()
+    int fun(int n)
     {
-        return num*num;
+        return n*n;
     }
 }
 
 namespace Cube
 {
     int num;
-    int fun()
+    int fun(int n)
     {
-        return num*num*num;
+        return n*n*n;
     }
 }
 
@@ -33,10 +33,10 @@ int main()
 {
     int number;
     std::cout<<"Enter the number you want the square of: ";
-    std::cin>>Square::num;
-    std::cout<<"Enter the number you want the cube of: ";
     std::cin>>Cube::num;
-    std::cout<<"Square of "<<Square::num<<" is "<<Square::fun()<<"."<<std::endl;
-    std::cout<<"Cube of "<<Cube::num<<" is "<<Cube::fun()<<"."<<std::endl;
+    std::cout<<"Enter the number you want the cube of: ";
+    std::cin>>Square::num;
+    std::cout<<"Square of "<<Cube::num<<" is "<<Square::fun(Cube::num)<<"."<<std::endl;
+    std::cout<<"Cube of "<<Square::num<<" is "<<Cube::fun(Square::num)<<"."<<std::endl;
     return 0;
 }

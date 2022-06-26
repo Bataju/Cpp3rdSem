@@ -1,7 +1,7 @@
-/*Assume that an object represents an employee report that contains information like employee id, 
-total bonus, total overtime in a particular year. Use an array of objects to represent n employees' reports. 
-Write a program that displays the report. Use setpara() member function to set report attributes 
-by passing the arguments and member function displayreport() to show the report according to the parameter passed. 
+/*    Assume that an object represents an employee report that contains information like employee id,
+total bonus, total overtime in a particular year. Use an array of objects to represent n employees' reports.
+Write a program that displays the report. Use setpara() member function to set report attributes by passing
+the arguments and member function displayreport() to show the report according to the parameter passed.
 Display the report in the following format.
 
 An employee with ... ... ... has received Rs ... ... ...as a bonus
@@ -10,39 +10,63 @@ and
 
 had worked ... ... ... hours as overtime in the year ... ... ...*/
 
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 class Employee
 {
-    private:
-        int employeeId;
-        float totalBonus;
-        int year;
-        float totalOvertime;
-    public:
-        void setPara(int eId, float totalBon, int y, float totalOT)
-        {
-            employeeId = eId;
-            totalBonus = totalBon;
-            year = y;
-            totalOvertime = totalOT;
-        }
-        void displayReport()
-        {
-            cout<<endl<<"An employee with employee ID "<<employeeId<<" has received Rs. "<<totalBonus<<" as a bonus."<<endl
-                <<"and"<<endl<<"had worked "<<totalOvertime<<" hours as overtime in the year "<<year<<"."<<endl;
-        }
+private:
+    int employeeId;
+    float totalBonus;
+    float totalOvertime;
+    int year;
+
+public:
+    void setpara(int eid, float bonus, float overtime, int y = 2022)
+    {
+        employeeId = eid;
+        totalBonus = bonus;
+        totalOvertime = overtime;
+        year = y;
+    }
+
+    void displayReport()
+    {
+        cout << endl
+             << "An employee with " << employeeId << " has received Rs. " << totalBonus << " as a bonus"
+             << endl
+             << "and" << endl
+             << "had worked " << totalOvertime << " hours as overtime in the year " << year << endl;
+    }
 };
 
 int main()
 {
-    Employee e[3];
-    e[0].setPara(554, 85000, 2020, 98);
-    e[0].displayReport();
-    e[1].setPara(555, 74000, 2020, 75);
-    e[1].displayReport();
-    e[2].setPara(556, 90000, 2020, 108);
-    e[2].displayReport();
+    int numberOfEmployee;
+    int empId, year;
+    float bonus, overtime;
+    cout << "Enter the number of employees: ";
+    cin >> numberOfEmployee;
+    Employee *e;
+    e = new Employee[numberOfEmployee];
+    for (int i = 0; i < numberOfEmployee; i++)
+    {
+        cout << "Enter employee id: ";
+        cin >> empId;
+        cout << "Enter the total bonus: ";
+        cin >> bonus;
+        cout << "Enter the total overtime: ";
+        cin >> overtime;
+        cout << "Enter the year: ";
+        cin >> year;
+        cout << endl;
+        (e + i)->setpara(empId, bonus, overtime, year);
+    }
+
+    for (int i = 0; i < numberOfEmployee; i++)
+    {
+        e[i].displayReport();
+    }
+    delete[] e;
     return 0;
 }

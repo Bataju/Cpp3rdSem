@@ -38,17 +38,17 @@ class Time
             t3.second = second + t2.second;
             t3.minute = minute + t2.minute;
             t3.hour = hour + t2.hour;
-            if(t3.second > 60)
+            if(t3.second >= 60)
             {
                 t3.minute++;
                 t3.second = t3.second - 60;
             }
-            if(t3.minute > 60)
+            if(t3.minute >= 60)
             {
                 t3.hour ++;
                 t3.minute = t3.minute - 60;
             }
-            if(t3.hour > 23)
+            if(t3.hour >= 24)
             {
                 t3.hour = t3.hour % 24;
             }
@@ -69,7 +69,7 @@ class Time
                 strcpy(AmOrPm, "pm");
             else
                 strcpy(AmOrPm, "am");
-            cout<<setfill('0')<<setw(2)<<(hour==12?12:hour%12)<<":"<<setfill('0')<<setw(2)<<minute<<":"<<setfill('0')<<setw(2)<<second<<" "<<AmOrPm<<endl;
+            cout<<setfill('0')<<setw(2)<<((hour==12||hour==0)?12:hour%12)<<":"<<setfill('0')<<setw(2)<<minute<<":"<<setfill('0')<<setw(2)<<second<<" "<<AmOrPm<<endl;
         }
         //(hour==12?12:hour%12) if it is 12 pm then display 12 not hour % 12 i.e 0
 };

@@ -11,7 +11,7 @@ using namespace std;
 class DemoClass
 {
 private:
-    int serialNumber;
+    int serialNumber; 
 
 public:
     static int count;

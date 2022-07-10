@@ -96,7 +96,7 @@ int main()
     d1.displayDate();
 
     cout << "Prefix increment..." << endl;
-    (++d1).displayDate(); // prefix i.e firstt increase then display
+    (++d1).displayDate(); // prefix i.e first increase then display
     cout << "New date..." << endl;
     d1.displayDate();
     return 0;

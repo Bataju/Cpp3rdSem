@@ -22,7 +22,8 @@ class Musicians
 private:
     char stringArray[5][15];
     char inputArray[15][15] = {"veena", "guitar", "sitar", "sarod", "mandolin", "flute", "clarinet", "saxophone", "nadhaswaram", "piccolo", "tabla", "mridangam", "bangos", "drums", "tambour"};
-
+protected:
+    char choice;
 public:
     void string()
     {
@@ -38,7 +39,7 @@ public:
         int j = 5;
         for (int i = 0; i < 5; i++, j++)
         {
-            strcpy(stringArray[i],inputArray[i]);
+            strcpy(stringArray[i],inputArray[j]);
         }
         display();
     }
@@ -48,7 +49,7 @@ public:
         int j = 10;
         for (int i = 0; i < 5; i++, j++)
         {
-            strcpy(stringArray[i],inputArray[i]);
+            strcpy(stringArray[i],inputArray[j]);
         }
         display();
     }
@@ -67,8 +68,6 @@ public:
 
 class TypeIns : public Musicians//derived class
 {
-private:
-    char choice;
 public:
     void get()
     {
@@ -102,7 +101,7 @@ public:
             }
             default:
             {
-                cout<<"Invalid choice.."<<endl;
+                cout<<endl<<"Invalid choice.."<<endl;
                 get();
                 show();
             }

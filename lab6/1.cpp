@@ -11,7 +11,8 @@ private:
     int meter;
     int centimeter;
 public:
-    Distance(int m ,int c):meter(m), centimeter(c){}
+    Distance():meter(0), centimeter(0){}//default constructor
+    Distance(int m,int c):meter(m), centimeter(c){}//parameterized constructor
     Distance(float m)//basic(Float) to userdefined data type Distance
     {
         this->meter = static_cast<int>(m);
@@ -34,7 +35,7 @@ int main()
     d1.display();
     d2.display();
 
-    float f1 = d2;//userdefined to basic
+    float f1 = d1;//userdefined to basic
     cout<<f1<<" meters."<<endl;
     return 0;
 }

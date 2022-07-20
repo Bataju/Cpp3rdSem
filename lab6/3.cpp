@@ -14,13 +14,13 @@ The show() method should display the relevant detail according to our choice.
 The base class variables must be accessible only to their derived classes.*/
 
 #include <iostream>
-#include <string>
+#include <cstring>
 using namespace std;
 
 class Musicians
 {
 private:
-    string stringArray[5];
+    char stringArray[5][15];
     char inputArray[15][15] = {"veena", "guitar", "sitar", "sarod", "mandolin", "flute", "clarinet", "saxophone", "nadhaswaram", "piccolo", "tabla", "mridangam", "bangos", "drums", "tambour"};
 
 public:
@@ -28,38 +28,33 @@ public:
     {
         for (int i = 0; i < 5; i++)
         {
-            stringArray[i] = inputArray[i];
+            strcpy(stringArray[i],inputArray[i]);
         }
-        cout << "Displaying the contents of the array initialized.." << endl;
-        for (int i = 0; i < 5; i++)
-        {
-            cout << stringArray[i];
-            if(i < 4){cout<< ", ";}//only for the first 4 items
-        }
-        cout << endl;
+        display();
     }
+
     void wind()
     {
         int j = 5;
         for (int i = 0; i < 5; i++, j++)
         {
-            stringArray[i] = inputArray[j];
+            strcpy(stringArray[i],inputArray[i]);
         }
-        cout << "Displaying the contents of the array initialized.." << endl;
-        for (int i = 0; i < 5; i++)
-        {
-            cout << stringArray[i];
-            if(i < 4){cout<< ", ";}//only for the first 4 items
-        }
-        cout << endl;
+        display();
     }
+
     void perc()
     {
         int j = 10;
         for (int i = 0; i < 5; i++, j++)
         {
-            stringArray[i] = inputArray[j];
+            strcpy(stringArray[i],inputArray[i]);
         }
+        display();
+    }
+
+    void display()
+    {
         cout << "Displaying the contents of the array initialized.." << endl;
         for (int i = 0; i < 5; i++)
         {
@@ -87,7 +82,6 @@ public:
 
     void show()
     {
-        int index;
         choice = (choice < 97)?(choice + 32):choice;//lowercase conversion
         switch(choice)
         {
@@ -110,6 +104,7 @@ public:
             {
                 cout<<"Invalid choice.."<<endl;
                 get();
+                show();
             }
         }
     }

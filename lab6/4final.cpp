@@ -88,7 +88,7 @@ void Person::printAddress()
 void Student::getData()
 {
     Person::getData();
-    cout << "Enter student's gpa: ";
+    cout << "Enter student's GPA: ";
     cin >> this->gpa;
 }
 void Student::showData()
@@ -158,6 +158,7 @@ int main()
     if(choice == 'y' || choice == 'Y')
     {
         s1.updateData();
+        cout << endl<< "Data for student 1.." << endl;
         s1.showData();
     }
 
@@ -179,7 +180,7 @@ int main()
     e2.printAddress();
 
     cout << endl
-         << "The number of bytes occupies by the objects..." << endl;
+         << "The number of bytes occupied by the objects..." << endl;
     cout << "p1: " << sizeof(p1) << endl;
     cout << "p2: " << sizeof(p2) << endl;
     cout << "s1: " << sizeof(s1) << endl;

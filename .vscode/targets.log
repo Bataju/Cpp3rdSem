@@ -8,7 +8,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # This program built for i386-pc-mingw32
  
 
-# Make data base, printed on Sun Jul 03 10:07:23 2022
+# Make data base, printed on Thu Jul 21 18:01:18 2022
 
 # Variables
 
@@ -18,8 +18,6 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 ?F = $(notdir $?)
 # makefile
 MAKEFLAGS = Rrqp
-# environment
-VSCODE_LOG_NATIVE = false
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
@@ -35,12 +33,10 @@ CURDIR := e:/sem3/cpp/Cpp3rdSem
 # default
 SHELL := C:/Program Files/Git/bin/sh.exe
 # environment
-WI 
-make.exe: *** No rule to make target `all'.  Stop.
-
-NDIR = C:\Windows
+WINDIR = C:\Windows
 # environment
-VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
+VSCODE_N 
+LS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
 # environment
 ONEDRIVE = C:\Users\Acer\OneDrive
 # environment
@@ -50,17 +46,13 @@ MAKEFILE_LIST :=
 # environment
 TMP = C:\Users\Acer\AppData\Local\Temp
 # environment
-VSCODE_VERBOSE_LOGGING = true
-# environment
 PROGRAMW6432 = C:\Program Files
 # environment
 PROGRAMDATA = C:\ProgramData
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-581fc96c-d83d-4540-8173-5145a22252d7-sock
-# environment
 VSCODE_CWD = C:\Users\Acer\AppData\Local\Programs\Microsoft VS Code
 # environment
-PATH = C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\MinGW\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\GnuWin32\bin;C:\Users\Acer\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\Acer\AppData\Local\Programs\Python\Python310\;C:\Users\Acer\AppData\Local\Microsoft\WindowsApps;C:\Users\Acer\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Git\bin;C:\Program Files\Git\cmd;
+PATH = C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\MinGW\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\GnuWin32\bin;C:\Users\Acer\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\Acer\AppData\Local\Programs\Python\Python310\;C:\Users\Acer\AppData\Local\Microsoft\WindowsApps;C:\Users\Acer\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Git\bin;C:\Program Files\Git\cmd;E:\downloads\SDL2\lib\x64;
 # environment
 COMMONPROGRAMW6432 = C:\Program Files\Common Files
 # environment
@@ -70,8 +62,6 @@ USERPROFILE = C:\Users\Acer
 # environment
 ALLUSERSPROFILE = C:\ProgramData
 # environment
-VSCODE_LOG_STACK = false
-# environment
 NUMBER_OF_PROCESSORS = 8
 # environment
 ELECTRON_RUN_AS_NODE = 1
@@ -80,9 +70,7 @@ ELECTRON_RUN_AS_NODE = 1
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_9340_PAWZCNZCGHQFVCFU
-# environment
-VSCODE_PIPE_LOGGING = true
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_7676_CRSHQXKLKKDHMBCN
 # environment
 COMPUTERNAME = DESKTOP-2QLOAE1
 # environment
@@ -98,7 +86,7 @@ PUBLIC = C:\Users\Public
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
-VSCODE_CODE_CACHE_PATH = C:\Users\Acer\AppData\Roaming\Code\CachedData\30d9c6cd9483b2cc586687151bcbcd635f373630
+VSCODE_CODE_CACHE_PATH = C:\Users\Acer\AppData\Roaming\Code\CachedData\3b889b090b5ad5793f524b5d1d39fda662b96a2a
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
@@ -120,7 +108,8 @@ MAKE_VERSION := 3.81
 # makefile
 .DEFAULT_GOAL := 
 # environment
-PROGRAMFILES(X86) = C:\Program Files (x86)
+PROGRA 
+MFILES(X86) = C:\Program Files (x86)
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
@@ -140,7 +129,7 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 126 Stepping 5, GenuineIntel
 # environment
 OS = Windows_NT
 # environment
-VSCODE_IPC_HOOK = \\.\pipe\4995008eb4f987d2fa332f923e67b884-1.68.1-main-sock
+VSCODE_IPC_HOOK = \\.\pipe\4995008eb4f987d2fa332f923e67b884-1.69.2-main-sock
 # environment
 HOMEPATH = \Users\Acer
 # environment
@@ -160,7 +149,8 @@ SYSTEMROOT = C:\Windows
 # environment
 APPDATA = C:\Users\Acer\AppData\Roaming
 # environment
-TEMP = C:\Users\Acer\AppData\Local\Temp
+TEMP = C:\Users\Acer\App 
+Data\Local\Temp
 # environment
 COMSPEC = C:\Windows\system32\cmd.exe
 # default
@@ -186,11 +176,12 @@ LANG = C
 # environment
 PROCESSOR_LEVEL = 6
 # environment
-VSCODE_PID = 9340
+VSCODE_PID = 7676
 # environment
 USERDOMAIN_ROAMINGPROFILE = DESKTOP-2QLOAE1
-# variable set hash-table stats:
-# Load=87/1024=8%, Rehash=0, Collisions=9/104=9%
+# variable set hash-table sta 
+ts:
+# Load=82/1024=8%, Rehash=0, Collisions=9/99=9%
 
 # Pattern-specific Variable Values
 
@@ -198,24 +189,28 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-2QLOAE1
 
 # Directories
 
-# C:\Users\Acer\AppData\Local\Microsoft\WindowsApps (key C:/Users/Acer/AppData/Local/Microsoft/WindowsApps, mtime 1656554480): 13 files, no impossibilities.
+# C:\Users\Acer\AppData\Local\Microsoft\WindowsApps (key C:/Users/Acer/AppData/Local/Microsoft/WindowsApps, mtime 1658224398): 13 files, no impossibilities.
 # C:\Windows\System32\WindowsPowerShell\v1.0\ (key C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1650982070): 30 files, no impossibilities.
-# C:\Windows\System32\Wbem (key C:/Windows/System32/Wbem, mtime 1655472596): 171 files, no impossibilities.
-# . (key e:/sem3/cpp/Cpp3rdSem, mtime 1656735367): 12 files, no impossibilities.
+# C:\Windows\System32\Wbem (key C:/Windows/System32/Wbem, mtime 16 
+58202806): 170 files, no impossibilities.
+# . (key e:/sem3/cpp/Cpp3rdSem, mtime 1657192480): 14 files, no impossibilities.
 # C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common (key C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common, mtime 1655558877): 10 files, no impossibilities.
 # C:\MinGW\bin (key C:/MinGW/bin, mtime 1652666688): 59 files, no impossibilities.
 # C:\Windows\System32\OpenSSH\: could not be stat'd.
-# C:\Windows (key C:/Windows, mtime 1650936075): 115 files, no impossibilities.
-# C:\Program Files\Git\bin (key C:/Program Files/Git/bin, mtime 1654621144): 5 files, no impossibilities so far.
-# C:\Users\Acer\AppData\Local\Programs\Python\Python310\ (key C:/Users/Acer/AppData/Local/Programs/Python/Python310/, mtime 1652443566): 19 files, no impossibilities.
-# C:\Users\Acer\AppData\Local\Programs\Python\Python310\Scripts\ (key C:/Users/Acer/AppData/Local/Programs/Python/Python310/Scripts/, mtime 1652443569): 17 files, no impossibilities.
-# C:\Users\Acer\AppData\Local\Programs\Microsoft VS Code\bin (key C:/Users/Acer/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1655390810): 4 files, no impossibilities.
+# C:\Windows (key C:/Windows, mtime 1650936075): 114 files, no impossibilities.
+# C:\P 
+rogram Files\Git\bin (key C:/Program Files/Git/bin, mtime 1654621144): 5 files, no impossibilities so far.
+# C:\Users\Acer\AppData\Local\Programs\Python\Python310\ (key C:/Users/Acer/AppData/Local/Programs/Python/Python310/, mtime 1658113555): 20 files, no impossibilities.
+# C:\Users\Acer\AppData\Local\Programs\Python\Python310\Scripts\ (key C:/Users/Acer/AppData/Local/Programs/Python/Python310/Scripts/, mtime 1658027112): 18 files, no impossibilities.
+# C:\Users\Acer\AppData\Local\Programs\Microsoft VS Cod 
+e\bin (key C:/Users/Acer/AppData/Local/Programs/Microsoft VS Code/bin, mtime 1658225847): 4 files, no impossibilities.
 # C:\Program Files\Git\cmd (key C:/Program Files/Git/cmd, mtime 1654621172): 8 files, no impossibilities.
-# C:\Windows\system32 (key C:/Windows/system32, mtime 1656772877): 2977 files, no impossibilities.
+# C:\Windows\system32 (key C:/Windows/system32, mtime 1658372443): 2981 files, no impossibilities.
 # C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR (key C:/Program Files/NVIDIA Corporation/NVIDIA NvDLISR, mtime 1655558896): 5 files, no impossibilities.
-# C:\Program Files (x86)\GnuWin32\bin (key C:/Program Files (x86)/GnuWin32/bin, mtime 1656678983): 5 files, no impossibilities.
+# C:\Program Files (x86)\GnuWi 
+n32\bin (key C:/Program Files (x86)/GnuWin32/bin, mtime 1656678983): 5 files, no impossibilities.
 
-# 3450 files, no impossibilities in 16 directories.
+# 3456 files, no impossibilities in 16 directories.
 
 # Implicit Rules
 
@@ -235,7 +230,8 @@ all:
 # Not a target:
 .DEFAULT:
 #  Implicit rule search has not been done.
-#  Modification time never checked.
+#  Modification time never 
+ checked.
 #  File has not been updated.
 
 # Not a target:
@@ -256,7 +252,8 @@ makefile:
 
 # Not a target:
 GNUmakefile:
-#  A default, MAKEFILES, or -include/sinclude makefile.
+#  A default, MAKEFILES, or -in 
+clude/sinclude makefile.
 #  Implicit rule search has been done.
 #  File does not exist.
 #  File has been updated.
@@ -275,8 +272,11 @@ GNUmakefile:
 # # of strings in strcache: 0
 # # of strcache buffers: 0
 # strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
-# strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
+# strcach 
+make.exe: *** No rule to make target `all'.  Stop.
 
-# Finished Make data base on Sun Jul 03 10:07:23 2022
+e free: total = 0 / max = 0 / min = 4096 / avg = 0
+
+# Finished Make data base on Thu Jul 21 18:01:18 2022
 
  

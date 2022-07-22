@@ -62,14 +62,10 @@ int main()
     derived2ptr = (Derived2 *)(baseptr); // downcasting to wrong type because baseptr is pointing to object of derived1 type
     derived2ptr->display();              // possible
     
-    try
-    {
-        derived2ptr = dynamic_cast<Derived2*>(baseptr); // downcasting to wrong type using dynamic cast i.e not possible
+    derived2ptr = dynamic_cast<Derived2*>(baseptr); // downcasting to wrong type using dynamic cast i.e not possible
+    if(derived2ptr)    
         derived2ptr->display();
-    }
-    catch (std::exception &e)
-    {
-        cout << e.what()<<"yoyo" << endl;
-    }
+    else
+        cout<<"Cast failed.."<<endl;
     return 0;
 }

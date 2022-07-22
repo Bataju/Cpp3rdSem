@@ -14,7 +14,7 @@ private:
 public:
     Vehicle()
     {
-        cout<<"Constructor of vehicle called.."<<endl;
+        cout<<"Constructor of Vehicle called.."<<endl;
     }
     virtual void displayType()
     {
@@ -30,7 +30,7 @@ public:
     }
     ~Vehicle()
     {
-        cout<<"Destructor of vehicle called.."<<endl;
+        cout<<"Destructor of Vehicle called.."<<endl;
     }
 };
 

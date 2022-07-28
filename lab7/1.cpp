@@ -18,7 +18,7 @@ public:
     }
     virtual float area() = 0;//pure virtual function
     virtual void display() = 0;
-    virtual ~Shape()
+    virtual ~Shape() //if base class's destructor is not virtual, on using delete with base class pointer only base class's destructor will be called.
     {
         cout<<"Destructor of Shape invoked.."<<endl;
     }
@@ -97,17 +97,17 @@ int main()
 {
     //Shape shape1; //error Shape is an abstract class so can't create object
     Shape *shapeptr[3];
-    Circle c1(5);
-    Rectangle r1(3, 6);
-    Trapezoid t1(3, 5, 4);
-    shapeptr[0] = &c1; 
-    shapeptr[1] = &r1;
-    shapeptr[2] = &t1;
+    shapeptr[0] = new Circle(5);
+    shapeptr[1] = new Rectangle(3, 6);
+    shapeptr[2] = new Trapezoid(3, 5, 4);
     shapeptr[0]->display();
     cout<<"Area : "<<shapeptr[0]->area()<<endl;
     shapeptr[1]->display();
     cout<<"Area : "<<shapeptr[1]->area()<<endl;
     shapeptr[2]->display();
     cout<<"Area : "<<shapeptr[2]->area()<<endl;
+    delete shapeptr[0];
+    delete shapeptr[1];
+    delete shapeptr[2];
     return 0; 
 }

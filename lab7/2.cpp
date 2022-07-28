@@ -113,7 +113,7 @@ int main()
 {
     Manager manager;
     cout<<"Enter data for manager.."<<endl;
-    manager.getPersonData(); //possible because of virtual base class else ambiguity
+    manager.getPersonData(); //possible because of virtual base class or else it would be ambiguous
     manager.getData();
     cout<<"Displaying the data for manager.."<<endl;
     manager.showPersonData();

@@ -74,22 +74,22 @@ int main()
         cout<<endl<<"Cast vhptr2 to Bus* failed.."<<endl;
         cout<<"Reason: The type of *vhptr2 is currently "<<demangle(typeid(*vhptr2).name())<<endl;
     }   
-    carptr = dynamic_cast<Car*>(vhptr3);
-    if(carptr != NULL)
-        cout<<"Cast vhptr3 to Car* success.."<<endl;
-    else
-    {
-        cout<<"Cast vhptr3 to Car* failed.."<<endl;
-        cout<<"Reason: The type of *vhptr3 is currently "<<demangle(typeid(*vhptr3).name())<<endl;
-    }
-    bikeptr = dynamic_cast<Bike*>(vhptr1);
-    if(carptr != NULL)
-        cout<<"Cast vhptr1 to Bike* success.."<<endl;
-    else
-    {
-        cout<<"Cast vhptr1 to Bike* failed.."<<endl;
-        cout<<"Reason: The type of *vhptr1 is currently "<<demangle(typeid(*vhptr1).name())<<endl;
-    }
+    // carptr = dynamic_cast<Car*>(vhptr3);
+    // if(carptr != NULL)
+    //     cout<<"Cast vhptr3 to Car* success.."<<endl;
+    // else
+    // {
+    //     cout<<"Cast vhptr3 to Car* failed.."<<endl;
+    //     cout<<"Reason: The type of *vhptr3 is currently "<<demangle(typeid(*vhptr3).name())<<endl;
+    // }
+    // bikeptr = dynamic_cast<Bike*>(vhptr1);
+    // if(carptr != NULL)
+    //     cout<<"Cast vhptr1 to Bike* success.."<<endl;
+    // else
+    // {
+    //     cout<<"Cast vhptr1 to Bike* failed.."<<endl;
+    //     cout<<"Reason: The type of *vhptr1 is currently "<<demangle(typeid(*vhptr1).name())<<endl;
+    // }
 
     //correct downcasting
     busptr = dynamic_cast<Bus*>(vhptr1);
@@ -98,17 +98,17 @@ int main()
     else
         cout<<endl<<"Cast vhptr1 to Bus* failed.."<<endl;
 
-    carptr = dynamic_cast<Car*>(vhptr2);
-    if(carptr != NULL)
-        cout<<"Cast vhptr2 to Car* success.."<<endl;
-    else
-        cout<<"Cast vhptr2 to Car* failed.."<<endl;
+    // carptr = dynamic_cast<Car*>(vhptr2);
+    // if(carptr != NULL)
+    //     cout<<"Cast vhptr2 to Car* success.."<<endl;
+    // else
+    //     cout<<"Cast vhptr2 to Car* failed.."<<endl;
 
-    bikeptr = dynamic_cast<Bike*>(vhptr3);
-    if(carptr != NULL)
-        cout<<"Cast vhptr3 to Bike* success.."<<endl;
-    else
-        cout<<"Cast vhptr3 to Bike* failed.."<<endl;
+    // bikeptr = dynamic_cast<Bike*>(vhptr3);
+    // if(carptr != NULL)
+    //     cout<<"Cast vhptr3 to Bike* success.."<<endl;
+    // else
+    //     cout<<"Cast vhptr3 to Bike* failed.."<<endl;
 
     delete busptr;
     delete carptr;

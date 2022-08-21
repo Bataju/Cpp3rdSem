@@ -51,7 +51,7 @@ HourFormat24::HourFormat24(HourFormat12 twelve)//12 TO 24
     {
         this->hours = 12 + twelve.returnHours() % 12;
     }
-}
+} 
 
 HourFormat12::HourFormat12(HourFormat24 twentyfour)
 {
